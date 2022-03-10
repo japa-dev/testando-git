@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,">
+	<meta name="description" content="">
+	<meta name="author" content="Vibezz">
+	<title>Analytics Vibezz</title>
+	<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style>
+		body {
+			color: #ffffff;
+			background-color: #0d2745;
+			height: 100%;
+		}
+		.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+			width: 100%;
+			padding-right: 0 !important;
+			padding-left: 0 !important;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.footer{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+		}
+
+		.logo {
+			max-width: 80px;
+		}
+
+		iframe {
+			width: 100%;
+			height: calc(100vh - 40px);
+		}
+		.cp{
+			color: rgb(165, 165, 165);
+		}
+
+		a{color: #d2d2d2;}
+		a:hover{
+			color: #e1597a;
+		}
+		.active{
+			color: #e1597a!important;
+		}
+
+
+		@media(max-width:768px){
+		.logo {
+			max-width: 60px;
+			padding: 5px;
+		}
+
+			
+		iframe {
+			height: calc(100vh - 40px);
+		}
+
+		.footer{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+		}
+
+		.menu{
+			padding-bottom: 10px;
+			border-bottom: #d8d8d8 1px dotted;
+			width: 100%;
+
+		}
+
+		.cp{
+			display: none;
+			color: rgb(165, 165, 165);
+		}
+
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+
+
+		<div class="row no-gutters">
+			<div id="iframe" class="col-12">
+				
+			</div>
+		</div>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165964564-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-165964564-1');
+		</script>
+
+		<footer class="footer px-2">
+			<div class="menu">
+				<span class="px-3 "><a href="index.html">Competitive Analysis</a></span>
+				<span class="px-3"><a href="index2.html">Showtime Historic</a></span>
+				<span class="px-3 active">Historical Dashboard</span>
+			</div>
+
+			<div class="logo">
+				<a href="http://vibezz.com.br/"><img class="logo img-fluid" src="https://vibezz.com.br/wp-content/uploads/2020/03/vibezz-pink-logo.png.webp" alt=""></a>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+		</script>
+
+
+</body>
+
+<script>
+// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+	document.getElementById("iframe").innerHTML='<iframe src="https://www.powerbi.com/reportEmbed?reportId=0ca8f29d-2f34-423f-bc4f-a60bf6deadfb&autoAuth=true&ctid=4b5dedde-61f9-4986-be50-fdeba29a9d91&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D&language=en-us" frameborder="0" allowFullScreen="true"></iframe>';
+// }else{
+// 	document.getElementById("iframe").innerHTML='<iframe src="https://app.powerbi.com/reportEmbed?reportId=9779bd5b-7d63-46c2-97c0-2288a02558d5&autoAuth=true&ctid=4b5dedde-61f9-4986-be50-fdeba29a9d91&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D&language=en-US"frameborder="0" style="border:0" allowfullscreen></iframe>';
+// }
+</script>
+
+</html>
